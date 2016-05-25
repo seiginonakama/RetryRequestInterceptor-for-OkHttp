@@ -55,7 +55,8 @@ you can simple init RetryRequestInterceptor in Application.onCreate() method
        */
       @Override
       public boolean isRetryRequest(Request request) {
-        return false; //judge whether to retry request
+        return request.url.toString().equals("http://api.exapmle.com/payresult/upload")
+         && request.method.equals("POST"); //judge whether to retry request
       }
     }));
   }

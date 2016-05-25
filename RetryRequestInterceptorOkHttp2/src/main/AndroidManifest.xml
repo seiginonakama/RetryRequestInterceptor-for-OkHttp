@@ -1,0 +1,12 @@
+<manifest package="me.touko.okhttp.retryinterceptor"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        >
+
+    </application>
+
+</manifest>

@@ -1,1 +1,3 @@
-include ':RetryRequestInterceptor'
+include ':core'
+include ':RetryRequestInterceptorOkHttp2'
+include ':RetryRequestInterceptorOkHttp3'

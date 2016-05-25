@@ -1,6 +1,6 @@
-## RetryRequestInterceptor for OkHttp3
+## RetryRequestInterceptor for OkHttp2， OkHttp3
 </br>
-a RetryRequestInterceptor for okHttp3, has those features:
+a RetryRequestInterceptor for okHttp2, OkHttp3, has those features:
 
 * will retry request until success or retry times over limit , or request live time over limit; 
 * you can listen retry result by provide a RetryResultListener;

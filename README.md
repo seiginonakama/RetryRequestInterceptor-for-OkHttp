@@ -8,6 +8,23 @@ a RetryRequestInterceptor for okHttp2, OkHttp3, has those features:
 * invoke retry action by trigger, no loop thread, no waste cpu.
 
 ---
+
+### Import
+```gradle
+repositories {
+  jcenter()
+}
+```
+for OkHttp2:
+```gradle
+compile 'me.touko.okHttp2:RetryRequestInterceptorOkHttp2:1.0.0'
+```
+for OkHttp3:
+```gradle
+compile 'me.touko.okHttp3:RetryRequestInterceptorOkHttp3:1.0.0'
+```
+
+---
 ### Usage
 
 ####Step 1 : init RetryRequestInterceptor before use
@@ -69,7 +86,7 @@ you can simple init RetryRequestInterceptor in Application.onCreate() method
 
 ####Step 3 : invoke retry action by random time point
 
-you can simple invoke retry action in Activity.onPause() and Activity.onResume() method
+you can simple invoke retry action in Activity.onPause() and Activity.onResume() method， or use my other library [RandomEvent](https://github.com/lqcandqq13/RandomEvent)
 
 ```java
 @Override

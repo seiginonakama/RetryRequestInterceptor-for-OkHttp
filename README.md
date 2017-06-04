@@ -27,7 +27,7 @@ compile 'me.touko.okHttp3:RetryRequestInterceptorOkHttp3:1.0.0'
 ---
 ## Usage
 
-###Step 1 : init RetryRequestInterceptor before use
+### Step 1 : init RetryRequestInterceptor before use
 you can simple init RetryRequestInterceptor in Application.onCreate() method
 
 ```java

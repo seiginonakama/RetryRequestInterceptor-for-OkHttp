@@ -78,13 +78,13 @@ you can simple init RetryRequestInterceptor in Application.onCreate() method
     }));
   }
 ```
-###Step 2 : add RetryRequestInterceptor to your OkHttpClient
+### Step 2 : add RetryRequestInterceptor to your OkHttpClient
 
 ```java
     mOkHttpClient.interceptors().add(RetryRequestInterceptor.getInstance());
 ```
 
-###Step 3 : invoke retry action by random time point
+### Step 3 : invoke retry action by random time point
 
 you can simple invoke retry action in Activity.onPause() and Activity.onResume() method， or use my other library [RandomEvent](https://github.com/lqcandqq13/RandomEvent)
 
@@ -102,7 +102,7 @@ public void onResume() {
 }
 ```
 
-###(Optional)Step 4 : add RetryResultListener
+### (Optional)Step 4 : add RetryResultListener
 
 ```java
     RetryRequestInterceptor.getInstance().addRetryResultListener(new RetryResultListener() {
@@ -128,7 +128,7 @@ public void onResume() {
     });
 ```
 
-###(Optional)Step 5 : Override more default RetryConfig method in Step 1 to make retry more customizable
+### (Optional)Step 5 : Override more default RetryConfig method in Step 1 to make retry more customizable
 ```java
 RetryRequestInterceptor.getInstance().init(this, new RetryConfig() {
     
